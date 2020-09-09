@@ -1,0 +1,47 @@
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minesweeper</title>
+    <link rel = "stylesheet" type = "text/css" href = "Minesweeper.css">
+    <script src="Minesweeper.js" type = "text/javascript"></script>
+    
+</head>
+<body>
+
+<div class = "Site">
+    <div class = "Top">
+        <h1>Minesweeper</h1>
+    </div>
+    <div class = "GameSpace">
+        <div id = "GameGrid" class = "GameGrid">
+            <table id = "grid">
+
+            </table>
+
+        </div>
+    </div>
+    <div class = "Settings">
+        <label  for="row">Rows (6-10):</label><br>
+        <input id = "rowR" type = "range" min = 
+        "6" max = "10"><br>
+        <label for="row">Columns(6-10):</label><br>
+        <input id = "colR" type = "range" min = 
+        "6" max = "10"><br>
+        <input type="radio" id="easy" name="diff" value="10" checked>
+        <label for="easy">Easy</label><br>
+        <input type="radio" id="medium" name="diff" value="15">
+        <label for="medium">Medium</label><br>
+        <input type="radio" id="hard" name="diff" value="20">
+        <label for="hard">Hard</label><br><br>
+        <input  id = "NG" type = "button" value = "New Game">
+    </div>
+    <div class  = "Footer">
+        Jakob Brinkhof 2020<br>
+       
+        <script>document.write('Last Modified:' + document.lastModified);</script>
+    </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,138 @@
+
+    .Site
+{
+    display: grid;
+    grid-template-rows:10vh 25vh 40vh 15vh 10vh ;
+    grid-row-gap:10px;
+    grid-template-columns: 3fr 1fr;
+    background: lightblue;
+    padding:10px;
+}
+.Top
+{
+    background:lightcyan;
+    text-align:center;
+    grid-column: 1/4;
+    grid-row:1/2;
+}
+.Footer
+{
+    background:lightcyan;
+    grid-column:1/4;
+    grid-row:5/6;
+    text-align: center;
+}
+.GameSpace
+{
+    display: grid;
+    grid-template-columns:1fr 3fr 1fr;
+    background:grey;
+    grid-column:1/3;
+    grid-row:2/5;
+    border-style: solid;
+    border-color: red;
+    border-radius:5px;
+}
+.GameGrid
+{
+    grid-column:2/3;
+    background:lightgrey;
+    padding:20px;
+    border-style:dashed;
+    border-color: blue;
+    border-radius: 2px;
+}
+.Settings
+{
+   grid-row:2/3;
+    grid-column:3/4;
+    background:beige;
+    padding:10px;
+}
+#grid TD {
+    border:1px solid white;
+    background: #999999;
+   width:auto;
+   height: auto;
+   text-align: center;
+   font-size:auto;
+}
+#grid tr{
+    background:purple;
+}
+#grid TD.clicked
+{
+    background:blue;
+}
+
+
+@media screen and ( min-width : 800px ){
+
+
+.Site
+{
+    display: grid;
+    grid-template-rows:10vh 25vh 40vh 15vh 10vh ;
+    grid-row-gap:10px;
+    grid-template-columns: 1fr 3fr 1fr;
+    background: lightblue;
+    padding:10px;
+}
+.Top
+{
+    background:lightcyan;
+    text-align:center;
+    grid-column: 1/4;
+    grid-row:1/2;
+}
+.Footer
+{
+    background:lightcyan;
+    grid-column:1/4;
+    grid-row:5/6;
+    text-align: center;
+}
+.GameSpace
+{
+    display: grid;
+    grid-template-columns:1fr 3fr 1fr;
+    background:grey;
+    grid-column:2/3;
+    grid-row:2/5;
+    border-style: solid;
+    border-color: red;
+    border-radius:5px;
+}
+.GameGrid
+{
+    grid-column:2/3;
+    background:lightgrey;
+    padding:20px;
+    border-style:dashed;
+    border-color: blue;
+    border-radius: 2px;
+}
+.Settings
+{
+   grid-row:2/3;
+    grid-column:3/4;
+    background:beige;
+    padding:10px;
+}
+#grid TD {
+    border:1px solid white;
+    background: #999999;
+   width:auto;
+   height: auto;
+   text-align: center;
+   font-size:auto;
+}
+#grid tr{
+    background:purple;
+}
+#grid TD.clicked
+{
+    background:blue;
+}
+}
+
